@@ -1,0 +1,484 @@
+/* --- Gold, Black, and White Modern Theme with Button Overrides --- */
+
+/* General body and container */
+body {
+  background: #181818 !important;
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Navbar */
+.navbar,
+.bg-dark {
+  background: #181818 !important;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.navbar-brand strong,
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFD700 !important;
+}
+
+.navbar-toggler {
+  border-color: #FFD700;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,215,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Header About Section */
+.bg-dark .text-white,
+.bg-dark .text-muted {
+  color: #FFD700 !important;
+}
+.bg-dark .text-muted {
+  opacity: 0.8;
+}
+
+/* Jumbotron / Hero Section */
+.jumbotron {
+  background: linear-gradient(120deg, #181818 0%, #FFD700 100%);
+  color: #fff;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 8px 32px rgba(24,24,24,0.18);
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 4px solid #FFD700;
+}
+
+.jumbotron h1,
+.jumbotron .display-3 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+  color: #FFD700;
+  text-shadow: 1px 1px 8px #18181888;
+}
+
+.jumbotron p.lead {
+  color: #fffbe6;
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+}
+
+.jumbotron .btn-success,
+.jumbotron .btn-primary,
+.jumbotron .btn-info,
+.jumbotron .btn-dark,
+.jumbotron .btn,
+.btn-success,
+.btn-primary,
+.btn-info,
+.btn-dark,
+.btn {
+  background: #FFD700 !important;
+  color: #181818 !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 36px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.10);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.jumbotron .btn-success:hover,
+.jumbotron .btn-primary:hover,
+.jumbotron .btn-info:hover,
+.jumbotron .btn-dark:hover,
+.jumbotron .btn:hover,
+.btn-success:hover,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-dark:hover,
+.btn:hover {
+  background: #181818 !important;
+  color: #FFD700 !important;
+  border: 1.5px solid #FFD700 !important;
+}
+
+/* Pricing Header */
+.pricing-header {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(24,24,24,0.10);
+  margin-bottom: 32px;
+}
+
+.pricing-header h1 {
+  font-weight: 700;
+  color: #FFD700;
+}
+
+.pricing-header p.lead {
+  color: #181818;
+}
+
+/* Album Section */
+.album {
+  background: #222;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(24,24,24,0.10);
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(24,24,24,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none !important;
+  background: #fff;
+  color: #181818;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(255,215,0,0.18);
+  border: 2px solid #FFD700;
+}
+
+.card-header {
+  background: #fffbe6;
+  border-bottom: none;
+  border-radius: 16px 16px 0 0;
+  color: #181818;
+}
+
+.card-header h5 {
+  color: #FFD700;
+  font-weight: 700;
+}
+
+.card-img-top {
+  border-radius: 0 0 16px 16px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 24px 18px;
+}
+
+.card-text {
+  color: #181818;
+  font-size: 1rem;
+}
+
+.btn-outline-success,
+.btn-outline-primary,
+.btn-outline-info,
+.btn-outline-dark,
+.btn-outline {
+  border-radius: 8px;
+  font-weight: 600;
+  border-width: 2px;
+  border-color: #FFD700 !important;
+  color: #FFD700 !important;
+  background: transparent !important;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-outline-success:hover,
+.btn-outline-primary:hover,
+.btn-outline-info:hover,
+.btn-outline-dark:hover,
+.btn-outline:hover,
+.btn-outline-success:focus,
+.btn-outline-primary:focus,
+.btn-outline-info:focus,
+.btn-outline-dark:focus,
+.btn-outline:focus {
+  background: #FFD700 !important;
+  color: #181818 !important;
+  border-color: #FFD700 !important;
+}
+
+.text-muted,
+small.text-muted {
+  color: #FFD700 !important;
+  font-weight: 500;
+}
+
+/* Table Modernization */
+.table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(24,24,24,0.08);
+  color: #181818;
+}
+
+.table th, .table td {
+  vertical-align: middle !important;
+}
+
+.table thead th {
+  background: #fffbe6;
+  color: #FFD700;
+  font-weight: 700;
+  border-bottom: 2px solid #FFD700;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fffbe6;
+}
+
+/* Modal Modernization */
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(255,215,0,0.10);
+  background: #fff;
+  color: #181818;
+}
+
+.modal-header {
+  border-bottom: none;
+  background: #fffbe6;
+  border-radius: 16px 16px 0 0;
+}
+
+.modal-title {
+  color: #FFD700;
+  font-weight: 700;
+}
+
+.modal-footer {
+  border-top: none;
+  background: #fffbe6;
+  border-radius: 0 0 16px 16px;
+}
+
+/* Reservation Form (multi-step) */
+.rsvnTab {
+  display: none;
+  animation: fadeIn 0.5s;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 18px;
+  color: #181818;
+}
+
+.rsvnTab.active {
+  display: block;
+}
+
+label,
+.col-form-label,
+.form-group label {
+  color: #181818;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1.5px solid #FFD700;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  color: #181818;
+  transition: border 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #181818;
+  outline: none;
+  background: #fffbe6;
+}
+
+.invalid {
+  border-color: #e53e3e !important;
+  background: #fff5f5 !important;
+}
+
+.step {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.step.active {
+  background-color: #181818;
+  border: 2px solid #FFD700;
+}
+
+.step.finish {
+  background-color: #22c55e;
+}
+
+.rsvnBtnRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+/* Universal button override for all reservation form buttons */
+button,
+input[type="button"],
+input[type="submit"],
+.btn-success,
+.btn-primary,
+.btn-info,
+.btn-dark,
+.btn {
+  background: #FFD700 !important;
+  color: #181818 !important;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s, border 0.2s;
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+  background: #b6a642 !important;
+  color: #fff !important;
+  cursor: not-allowed;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.btn-success:hover,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-dark:hover,
+.btn:hover {
+  background: #181818 !important;
+  color: #FFD700 !important;
+  border: 1.5px solid #FFD700 !important;
+  box-shadow: 0 4px 16px rgba(255,215,0,0.12);
+}
+
+/* Reservation summary fields */
+.roomPriceTxt,
+.roomPricePerNightTxt,
+.numNightsTxt,
+.fromToTxt,
+.taxesTxt,
+.totalTxt,
+.bookedDateTxt {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #FFD700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.summary-section {
+  background: #fffbe6;
+  border-radius: 12px;
+  padding: 18px 16px;
+  margin: 18px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+/* Footer */
+footer.container {
+  margin-top: 48px;
+  padding: 24px 0;
+  background: #181818;
+  color: #FFD700;
+  text-align: center;
+  border-radius: 24px 24px 0 0;
+  font-size: 1rem;
+  box-shadow: 0 -2px 12px rgba(24,24,24,0.10);
+}
+
+/* Miscellaneous */
+a, a:visited {
+  color: #FFD700;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #181818;
+  background: #FFD700;
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+}
+
+p {
+  color: #181818;
+}
+
+.red-asterisk {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .album .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbotron h1,
+  .jumbotron .display-3 {
+    font-size: 2rem;
+  }
+  .card-body {
+    padding: 16px 8px;
+  }
+  .pricing-header {
+    padding: 12px 6px;
+  }
+}
+
+/* Subtle transitions for all elements */
+* {
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.roomPriceTxt, .roomPricePerNightWrap, .taxesWrap, .totalWrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #FFD700;
+  }
+  .peso-sign {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 2px;
+    line-height: 1;
+    vertical-align: middle;
+  
+  }
+  .amount, .roomPricePerNightTxt, .taxesTxt, .totalTxt {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
